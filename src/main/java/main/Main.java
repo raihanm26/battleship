@@ -11,7 +11,9 @@ public class Main {
         setDebugLogging();
         TextPresenter presenter = new TextPresenter();
         presenter.setConvert(new EmojiConvert());
-        core.GameDriver g = new core.GameDriver(presenter);
+
+        // Pass System.in to GameDriver
+        core.GameDriver g = new core.GameDriver(presenter, System.in);
         g.start();
     }
 
@@ -20,3 +22,4 @@ public class Main {
         logger.setLevel(Level.ALL);
     }
 }
+

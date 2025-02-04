@@ -1,6 +1,15 @@
 // Raihan and Jonah
 package core;
 
+
+/**
+ *Creates object which are used to fill grid
+ * Represents a single cell in the Battleship grid.
+ * A cell can be empty or contain a ship and can be marked as shot.
+ * @author mdhamimraihan
+ */
+
+
 public class Cell {
     private boolean shot;
     private boolean ship;
