@@ -56,7 +56,13 @@ public class Cell {
         return this.ship;
     }
 
-
+    /**
+     * Determines if the shot on this cell resulted in a hit.
+     *
+     * @return {@code true} if the cell has been shot and contains a ship, {@code false} otherwise.
+     * ref #94   https://github.com/skiadas/battleship/issues/94#issue-2833525080
+     *@author mdhamimraihan
+     */
     public boolean cellIsHit() {
         return this.hasBeenShot() && this.hasShip();
     }
@@ -66,7 +72,12 @@ public class Cell {
         return this.hasBeenShot() && !this.hasShip();
     }
 
-    // Mark the cell as shot
+
+    /** Mark the cell as shot
+
+    * ref #94   https://github.com/skiadas/battleship/issues/94#issue-2833525080
+            *@author mdhamimraihan
+     */
     public void setAsShot() {
         this.shot = true;
     }
