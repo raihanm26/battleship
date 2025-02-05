@@ -88,6 +88,11 @@ public class Cell {
         this.ship = true;
     }
 
+    /**
+     *Marks the cell as a hit, meaning it has been shot and contains a ship.
+     * * * * ref #94   https://github.com/skiadas/battleship/issues/94#issue-2833525080
+     *      ** @author mdhamimraihan
+     */
     public void setAsHit() {
         this.ship = true;
         this.shot = true;
