@@ -40,7 +40,13 @@ public class Cell {
         return !this.hasShip();
     }
 
-    // the cell has been shot
+    /**
+     * Checks if the cell has been shot.
+     *
+     * @return {@code true} if the cell has been shot, {@code false} otherwise.
+     * * ref #94   https://github.com/skiadas/battleship/issues/94#issue-2833525080
+     * @author mdhamimraihan
+     */
     public boolean hasBeenShot() {
         return this.shot;
     }
@@ -50,7 +56,7 @@ public class Cell {
         return this.ship;
     }
 
-    // the shot on this cell resulted in a hit
+
     public boolean cellIsHit() {
         return this.hasBeenShot() && this.hasShip();
     }
