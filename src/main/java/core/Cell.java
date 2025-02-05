@@ -13,11 +13,23 @@ package core;
 public class Cell {
     private boolean shot;
     private boolean ship;
+    /**
+     ** Creates an empty cell with no ship and not shot.
+     */
+
 
     public Cell() {
         this.shot = false;
         this.ship = false;
     }
+
+    /**
+     * Creates a cell with the specified ship presence.
+     *  @param ship {@code true} if the cell contains a ship, {@code false} otherwise.
+     * ref #94   https://github.com/skiadas/battleship/issues/94#issue-2833525080
+     * @author mdhamimraihan
+     */
+
 
     public Cell(boolean ship) {
         this.ship = ship;
