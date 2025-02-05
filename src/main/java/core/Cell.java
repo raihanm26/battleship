@@ -78,6 +78,7 @@ public class Cell {
     * ref #94   https://github.com/skiadas/battleship/issues/94#issue-2833525080
             *@author mdhamimraihan
      */
+
     public void setAsShot() {
         this.shot = true;
     }
@@ -97,7 +98,11 @@ public class Cell {
         this.ship = false;
     }
 
-    // Reset the cell to its initial state
+    /**
+     * Resets the cell to its initial state (no ship, not shot).
+     * * * ref #94   https://github.com/skiadas/battleship/issues/94#issue-2833525080
+     ** @author mdhamimraihan
+     */
     public void reset() {
         this.shot = false;
         this.ship = false;
